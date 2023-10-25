@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": ["../src/main.ts"],
-  "sourcesContent": ["/*\n * SPDX-FileCopyrightText:  Copyright 2023 Roland Csaszar\n * SPDX-License-Identifier: AGPL-3.0-or-later\n *\n * Project:  Gregor\n * File:     main.ts\n * Date:     25.Oct.2023\n *\n * ==============================================================================\n */\n\nconsole.error(\"Oh\");\n"],
-  "mappings": ";;;AAWA,UAAQ,MAAM,IAAI;",
+  "sources": ["http/app.js"],
+  "sourcesContent": ["\"use strict\";\n(() => {\n  // src/main.ts\n  console.error(\"Oh\");\n})();\n"],
+  "mappings": "mBAGE,QAAQ,MAAM,IAAI",
   "names": []
 }

@@ -1,5 +1,1 @@
-"use strict";
-(() => {
-  // src/main.ts
-  console.error("Oh");
-})();
+"use strict";(()=>{console.error("Oh");})();

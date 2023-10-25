@@ -1,15 +1,16 @@
-/* eslint-disable jsdoc/require-jsdoc */
-/* eslint-disable multiline-comment-style */
 /*
- * SPDX-License-Identifier: GPL-3.0-or-later
- * Copyright (C) 2021 Roland Csaszar
+ * SPDX-FileCopyrightText:  Copyright 2023 Roland Csaszar
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  *
- * Project:  notoy-pwa
+ * Project:  Gregor
  * File:     gulpfile.js
- * Date:     02.Dec.2021
+ * Date:     25.Oct.2023
  *
  * ==============================================================================
  */
+
+/* eslint-disable jsdoc/require-jsdoc */
+/* eslint-disable multiline-comment-style */
 /* eslint-disable max-lines */
 /* eslint-disable no-console */
 
