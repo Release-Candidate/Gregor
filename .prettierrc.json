@@ -8,5 +8,6 @@
     "arrowParens": "always",
     "endOfLine": "lf",
     "proseWrap": "always",
-    "singleQuote": false
+    "singleQuote": false,
+    "plugins": ["prettier-plugin-tailwindcss"]
 }

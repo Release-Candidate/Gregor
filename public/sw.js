@@ -16,15 +16,14 @@
  * This is filled by `gulp bundle` when copying `sw.js` to the directory `http`.
  */
 // eslint-disable-next-line no-undef
-const version = TIMESTAMP;
+const version = "BLA";
 
 /**
  *  `manifest` is an array holding the paths to all files to cache.
- *  This is changed against the real list of files by `gulp bundle` when copying
- * `sw.js` to the directory `http`.
+ *  This is changed against the real list of files by the `vite-plugin-pwa`,
+ *  configured in `../vite.config.ts`
  */
-// eslint-disable-next-line no-undef
-const manifest = [LIST_OF_FILES];
+const manifest = VITE_PLUGIN_MANIFEST.map((e) => e.url);
 
 /*
  * ==============================================================================
@@ -75,7 +74,9 @@ addEventListener("activate", (event) => event.waitUntil(activate()));
  * @returns {Response} The fetched URL as `Response`.
  */
 async function fetchFromCache(request) {
-    const cachedResponse = await caches.match(request, { ignoreSearch: true });
+    const cachedResponse = await caches.match(request, {
+        ignoreSearch: true,
+    });
     if (cachedResponse) {
         // eslint-disable-next-line no-console
         console.log(`[Service Worker] cache hit: ${request.url}`);
@@ -94,7 +95,7 @@ async function fetchFromCache(request) {
 }
 
 addEventListener("fetch", (event) =>
-    event.respondWith(fetchFromCache(event.request))
+    event.respondWith(fetchFromCache(event.request)),
 );
 
 /**

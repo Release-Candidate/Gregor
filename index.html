@@ -24,13 +24,22 @@
         <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
         <link rel="manifest" href="./manifest.json" />
         <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#bfab91" />
-        
+        <link href="./src/index.css" rel="stylesheet" />
         <meta name="msapplication-TileColor" content="#bfab91" />
         <meta name="theme-color" content="#bfab91" />
-        
+        <script type="module">
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker
+                    .register(new URL("./sw.js", import.meta.url), {
+                        type: "module",
+                        scope: "/",
+                    })
+                    .then(function () {
+                        console.log("[index.html] Service Worker Registered");
+                    });
+            }
+        </script>
         <title>Gregor</title>
-      <script type="module" crossorigin src="/assets/index-f57f48a3.js"></script>
-      <link rel="stylesheet" href="/assets/index-36d5ee18.css">
     </head>
 
     <body>
@@ -40,6 +49,6 @@
             on a mobile device.
         </noscript>
         <div id="root"></div>
-        
+        <script type="module" src="/src/index.tsx"></script>
     </body>
 </html>

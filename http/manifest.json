@@ -8,7 +8,7 @@
   "display": "standalone",
   "theme_color": "#bfab91",
   "background_color": "#bfab91",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Gregor, a date and day of the week display app.",
   "share_target": {
     "action": "/",

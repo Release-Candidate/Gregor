@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["http/app.js"],
-  "sourcesContent": ["\"use strict\";\n(() => {\n  // src/main.ts\n  console.error(\"Oh\");\n})();\n"],
-  "mappings": "mBAGE,QAAQ,MAAM,IAAI",
-  "names": []
-}
