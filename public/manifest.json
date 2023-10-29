@@ -3,7 +3,7 @@
     "name": "Gregor",
     "short_name": "Gregor",
     "start_url": "./",
-    "id": "./",
+    "id": "./Gregor",
     "scope": "/",
     "display": "standalone",
     "theme_color": "#bfab91",
