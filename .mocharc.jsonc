@@ -2,16 +2,14 @@
     "jobs": 8,
     "package": "./package.json",
     "parallel": true,
-    "require": [
-        "ts-node/register",
-        "tsconfig-paths/register"
+    "node-option": [
+        "loader=ts-node/esm"
     ],
     "spec": [
-        "tests/**/*_test.ts"
+        "test/**/*_test.ts"
     ],
     "watch-files": [
-        "out/*.wasm",
-        "tests/**/*_test.ts"
+        "test/**/*_test.ts"
     ],
     "trace-warnings": true
 }
