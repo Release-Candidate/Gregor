@@ -33,6 +33,7 @@ export default defineConfig({
     preview: {
         port: 4173,
     },
+    base: "./",
     build: {
         sourcemap: true,
         outDir: "./http",
