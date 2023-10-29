@@ -13,17 +13,16 @@
 
 /**
  * `version` is the name of the cache, including a timestamp.
- * This is filled by `gulp bundle` when copying `sw.js` to the directory `http`.
+ * This is filled by `vite` when copying `sw.js` to the directory `http`.
  */
-// eslint-disable-next-line no-undef
-const version = "BLA";
+const version = "Gregor-" + APP_VERSION;
 
 /**
  *  `manifest` is an array holding the paths to all files to cache.
  *  This is changed against the real list of files by the `vite-plugin-pwa`,
  *  configured in `../vite.config.ts`
  */
-const manifest = VITE_PLUGIN_MANIFEST.map((e) => "/Gregor/http/" + e.url);
+const manifest = VITE_PLUGIN_MANIFEST.map((e) => PWA_SERVER_PATH + e.url);
 
 /*
  * ==============================================================================
