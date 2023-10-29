@@ -23,7 +23,7 @@ const version = "BLA";
  *  This is changed against the real list of files by the `vite-plugin-pwa`,
  *  configured in `../vite.config.ts`
  */
-const manifest = VITE_PLUGIN_MANIFEST.map((e) => e.url);
+const manifest = VITE_PLUGIN_MANIFEST.map((e) => "/Gregor/http/" + e.url);
 
 /*
  * ==============================================================================

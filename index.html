@@ -32,7 +32,7 @@
                 navigator.serviceWorker
                     .register(new URL("./sw.js", import.meta.url), {
                         type: "module",
-                        scope: "/",
+                        scope: "/Gregor/http/",
                     })
                     .then(function () {
                         console.log("[index.html] Service Worker Registered");
