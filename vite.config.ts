@@ -1,5 +1,5 @@
-import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig, loadEnv } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 import fs from "fs";
 import solid from "vite-plugin-solid";
 
@@ -11,7 +11,6 @@ export default defineConfig(({ mode }) => {
     if (pwaServerPath == null) {
         pwaServerPath = "/Gregor/http/";
     }
-
     // eslint-disable-next-line no-console
     console.log(`Setting server path to ${pwaServerPath}`);
 
